@@ -10,6 +10,7 @@
     left: calc(50% - 123.5px);
     z-index: 2;
 }
+
 .content{
     position: relative;
     top: -110px;
@@ -68,4 +69,33 @@
     justify-content: space-between;
     padding: 10px 10px;
     border-bottom: 1px solid var(--blueShadow);
+}
+
+.button_options{
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--blueShadow);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--blue100);
+}
+
+.visivel{
+    display: flex;
+}
+
+.invisivel{
+    display: none;
 }

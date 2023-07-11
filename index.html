@@ -26,8 +26,9 @@
 
             <section class="List">
                 <form class="form_new_task">
-                    <input type="text" aria-label="caixa para digitar nova tarefa" placeholder="Digite sua tarefa" class="new_task">
-                    <span role="button" aria-label="botão de adicionar tarefa">
+                    <input type="text" aria-label="caixa para digitar nova tarefa" placeholder="Digite sua tarefa" class="new_task" id="titulo-tarefa">
+                    
+                    <span role="button" aria-label="botão de adicionar tarefa" id="criarTarefa">
                         <img src="./Imagens/plus-fill.svg" alt="icon de adicionar">
                     </span>
                 </form>
@@ -35,16 +36,42 @@
                 <ul class="content-list">
                     <li class="task">
                         <p>Comprar pão</p>
-                        <div class="button_options">
-                            <div class="check-box">
-                                <img src="./Imagens/check-fat-fill.svg" alt="">
-                            </div>
-                        </div>
-                    </li>
+                        <div class="button_options" id="default">
+                        <span class="btn btn-set-status" aria-label="Botão alterar status da tarefa" role="button">
+                            <img src="./Imagens/check-fat-fill.svg" alt="check" />
+                        </span>
+                        <span class="btn btn-more" aria-label="Botão para mostar mais opções" role="button">
+                            <img src="./Imagens/dots-three-vertical-fill.svg" alt="mais opções" />
+                        </span>
+                    </div>
+                    
+                    <div class="button_options invisivel" id="more_options ">
+                        <span class="btn btn-edit-task" aria-label="Botão alterar o titulo da tarefa" role="button">
+                            <img src="./Imagens/pencil-simple-line-fill.svg" alt="lapis" />
+                        </span>
 
+                        <span class="btn btn-delete-task" aria-label="Botão excluir tarefa" role="button">
+                            <img src="./Imagens/pencil-simple-line-fill.svg" alt="lixeira" />
+                        </span>
+                        
+                        <span class="btn btn-cancel-action" aria-label="Botão voltar para opções inicias" role="button">
+                            <img src="./Imagens/pencil-simple-line-fill.svg" alt="x" />
+                        </span>
+                    </div>
+
+                    <div class="button_options invisivel" id="edit_options ">
+                        <span class="btn btn-save-edit" aria-label="Botão salvar a alteração da  tarefa" role="button">
+                            <img src="./Imagens/check-fat-fill.svg" alt="check" />
+                        </span>
+                        <span class="btn btn-cancel-action" aria-label="Botão voltar para opções inicias" role="button">
+                            <img src="./Imagens/x-fill.svg" alt="x" />
+                        </span>
+                    </div>
+                    </li>
                 </ul>
-            </section>
-        </div>
+                </section>
+            </div>
     </main>
+    <script src="./JS/script.js" type="module"></script>
 </body>
 </html>
